@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="stylesSE.css">  
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" 
+        crossorigin="anonymous" defer></script>
+    
+</head>
+
+<body>
+    <!-- lg = large breakpoint, navbar-light = make text dark, headerBG = custom css BG color-->
+    <nav class="navbar navbar-expand-lg navbar-dark nb-background-color">
+        <div class="container">
+            <a href="#" class="navbar-brand">
+                <img src="images/tsunami.png" alt="Tsunami Logo" class="d-inline-block align-text-top w-50">
+            </a>
+
+            <!--Hamburger Menu Button-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navmenu">
+                <!--links to hamburger button-->
+                <ul class="navbar-nav ms-auto">     <!--ms.auto = margin spacing-->
+                    <li class="nav-item">
+                        <a href="authors.html" class="nav-link hover-underlined-animation nbMenuItem">AUTHOR</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="procedure.html" class="nav-link hover-underlined-animation nbMenuItem">PROCEDURE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="results.html" class="nav-link hover-underlined-animation nbMenuItem">RESULTS</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!--Showcase-->
+    <section class="showcase text-light p-2 text-center">
+        <!-- headerBG = custom css BG color, p-2 = padding-2  -->
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 p-0 flex align-items-center">
+                    <!-- img-fluid = wont expand image large than the container and will scale down if necessary-->
+                    <img class="img-fluid title-image justify-content-center" src="images/title-image-tsunami.png" alt="tsunami image">
+                </div>
+                <div class="col-sm-6 p-0 d-flex align-items-center">
+                    <div class="container">
+                        <h1 class="display-4">High Speed Neural Network Tsunami Wave Simulator with Multiple Adjustable Parameters</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Overview -->
+    <section class="overview text-dark p-2 text-left">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 p-3 clipart">
+                    <!-- pt-3 = padding-top   -->
+                    <img class="img-fluid" src="images/tsunami-clipart.png" alt="Glaciers Melting">
+                </div>
+                <div class="col-sm-8 p-3">
+                    <h1 class="ovPadLeft">Background</h1>
+                    <p class="lead overview-font ovPadLeft">Due to global warming, glaciers have been 
+                        melting at an accelerated rate, causing coastlines to encroach further inland. 
+                        As a result, the danger that tsunamis pose to wildlife and the built environment 
+                        has worsened. Thus, to understand the impacts of these tsunamis, there is a need 
+                        for a fast and accurate tsunami simulation tool.
+                    </p>
+                </div>
+                
+                <div class="col-sm-8 p-3">
+                    <h1 class="ovPadRight">Rationale</h1>
+                    <p class="lead overview-font ovPadRight">Due to the rise of sea levels,communities on the coast 
+                        will be more susceptible to tsunamis, and as a result, flooding.
+                        Tsunamis are a series of waves that are caused by a huge displacement in a body of water. These
+                        tsunamis can generate massive wave heights as recently evidenced in Indonesia and Japan, which
+                        may overwhelm sea walls and other barriers. Not much has been done to research how different variables affect the wave heights of
+                        tsunamis. One positive outcome of this research is to be able to better understand how a number of
+                        factors affect tsunamis. By analyzing the topography and bathymetry of local coasts, researchers
+                        can generate more knowledge regarding how tsunamis are to form and how destructive they can
+                        really be.
+                    </p>
+                </div>
+                <div class="col-sm-4 p-3">
+                    <!-- pt-3 = padding-top   -->
+                    <img class="img-fluid padding-rationale" src="images/rationale-pic.png" alt="Tsunami Parameters">
+                </div>
+
+                <div class="col-sm-4 p-6 pt-10">
+                    <!-- pt-3 = padding-top   -->
+                    <img class="img-fluid w-100 gif-image" src="images/tsunami-prediction.gif" alt="Tsunami Wave Along Ramp">
+                </div>
+                <div class="col-sm-8 p-3">
+                    <h1 class="ovPadLeft">Research Goal</h1>
+                    <p class="lead overview-font ovPadLeft">To this end, this research created a neural network that can simulate tsunami waves 
+                          for two arbitrary parameters: ocean basin steepness and ocean basin depth. This neural network 
+                          is up to 117 times faster than a traditional solver with a mean squared error of only 8.678E-06.
+                            While the neural network currently accepts two parameters, we plan to add enough parameters for
+                            the neural network to understand even the most complex ocean basin topographies. This neural
+                             network approach will provide a high speed tool for researchers to study tsunamis. Ultimately, 
+                             this tool will allow for planners in coastal communities to appropriately design and place levees 
+                             and property boundaries.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (requires Bootstrap icons CSS)-->
+    <footer class="p-5 footer text-light text-center position-relative">
+        <div class="container">
+            <p class="lead ">Copyright &copy; SE 2023</p>
+            <a href="#" class="position-absolute bottom-0 end-0 p-5">
+                <i class="bi bi-arrow-up-circle h2 icon-white"></i>
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
